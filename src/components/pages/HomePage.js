@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import MyCV from '../../Docs/Alexander-CV.pdf';
+import Typer from '../Typer';
 
 class Homepage extends React.Component {
   render() {
@@ -15,9 +16,10 @@ class Homepage extends React.Component {
           </nav>
         <div id="content">
           <p>
-            <div class="typewriter">
-              <h1>My name is Alexander, I build things.</h1>
-            </div>
+          <Typer
+    heading={'My name is Alexander,'}
+    dataText={["I make things.","I develop applications.","I design backend systems.", "I build tooling.", "I integrate cloud platforms."]} 
+  /> 
           </p>
         </div>
       </>

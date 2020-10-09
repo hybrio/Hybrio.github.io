@@ -7,7 +7,6 @@ import {
 import './App.css';
 import HomePage from './components/pages/HomePage';
 import ProjectsPage from './components/pages/ProjectsPage';
-import ProjectInfoPage from './components/pages/ProjectInfoPage';
 import AboutPage from './components/pages/AboutPage';
 import TagCheckerPage from './components/pages/TagCheckerPage';
 
@@ -19,7 +18,6 @@ function App() {
               <Route exact path="/about" component={AboutPage} />
               <Route exact path="/projects" component={ProjectsPage} />
               <Route path="/" component={HomePage} />
-              <Route exact path="/projects/:id" component={ProjectInfoPage} />
               <Route exact path="/tag_checker" component={TagCheckerPage} />
             </Switch>
         </div>
