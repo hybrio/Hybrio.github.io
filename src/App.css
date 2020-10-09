@@ -4,12 +4,12 @@
 }
 
 nav{
-  height: max(3vh,3vw);
+  height: max(18vh,18vw);
   width: 100%;
 }
 
 #content{
-  height: min(calc(100% - 3vh), calc(100% - 3vw));
+  height: min(calc(100% - 18vh), calc(100% - 18vw));
   width: 100%;
 }
 
@@ -23,6 +23,8 @@ ul {
   padding: 0;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -35,10 +37,11 @@ a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;
-  font-size: max(2vh,2vw);
+  font-size: max(4vh,4vw);
 }
 p{
-  margin-left: 0;
+  margin-left: 1%;
+  margin-top: 0;
   padding-top: 25%;
   font-family: "Courier New", Courier, monospace;
   font-style: oblique;
@@ -54,5 +57,24 @@ p{
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav{
+    height: max(3vh,3vw);
+  }
+  ul {
+    display: block;
+    flex-direction: none;
+  }
+  a{
+    font-size: max(2vh,2vw);
+  }
+  #content{
+    height: min(calc(100% - 3vh), calc(100% - 3vw));
+  }
+  p{
+    margin: auto;
   }
 }
