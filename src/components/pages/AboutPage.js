@@ -4,7 +4,7 @@ class AboutPage extends React.Component {
   render() {
     return (
       <div>
-        &nbsp;Insert About Page here
+        &nbsp;page under construction
       </div>
     );
   }

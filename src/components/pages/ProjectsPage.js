@@ -4,7 +4,7 @@ class ProjectsPage extends React.Component {
   render() {
     return (
       <div>
-        &nbsp;Insert Projects Page here
+        &nbsp; page under construction
       </div>
     );
   }
