@@ -9,7 +9,7 @@ class Homepage extends React.Component {
       <>
         <nav>
             <ul>
-              <li> <a href={MyCV} target="_blank" rel="noopener noreferrer" download="Alexander-CV.pdf">Curriculum vitae. </a> </li>
+              <li> <a href={MyCV} without rel="noopener noreferrer" target="_blank">Curriculum vitae. </a> </li>
                 <li><Link to="/projects">Projects.</Link></li>
                 <li><Link to="/about">About.</Link></li>
             </ul>

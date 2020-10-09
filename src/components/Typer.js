@@ -50,10 +50,10 @@ class Typer extends React.Component {
   
     render() {    
       return (
-        <h1>{ this.props.heading }&nbsp;
+        <h2>{ this.props.heading }&nbsp;
           <span>{ this.state.text }</span>
           <span id="cursor"/>
-        </h1>
+        </h2>
       );
       
     }
