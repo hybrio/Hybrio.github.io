@@ -22,7 +22,7 @@ class ProjectsPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>Projects</h1>
+        <h1>Projects.</h1>
         <ul>
           {this.state.projects.map(project => {
             return <Repository key={`project-${project.id}`} name={project.name} target={project.html_url} >{project.name}</Repository>
