@@ -9,18 +9,16 @@ class Homepage extends React.Component {
       <>
         <nav>
             <ul>
-              <li> <a href={MyCV} without rel="noopener noreferrer" target="_blank">Curriculum vitae. </a> </li>
-                <li><Link to="/projects">Projects.</Link></li>
-                <li><Link to="/about">About.</Link></li>
+              <li> <a href={MyCV} without rel="noopener noreferrer" target="_blank" className="grow">Curriculum vitae. </a> </li>
+                <li><Link to="/projects"className="grow">Projects.</Link></li>
+                <li><Link to="/about"className="grow">About.</Link></li>
             </ul>
           </nav>
         <div id="content">
-          <p>
           <Typer
     heading={'My name is Alexander,'}
     dataText={["I make things.","I develop applications.","I design backend systems.", "I build tooling.", "I integrate cloud platforms."]} 
   /> 
-          </p>
         </div>
       </>
     );

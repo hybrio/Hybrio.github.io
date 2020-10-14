@@ -13,7 +13,7 @@ class Typer extends React.Component {
         text: '',
         isDeleting: false,
         loopNum: 0,
-        typingSpeed: 150
+        typingSpeed: 100
       }
     }
   
@@ -29,12 +29,12 @@ class Typer extends React.Component {
   
       this.setState({
         text: isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1),
-        typingSpeed: isDeleting ? 30 : 200
+        typingSpeed: isDeleting ? 20 : 100
       });
   
       if (!isDeleting && text === fullText) {
         
-        setTimeout(() => this.setState({ isDeleting: true }), 666);
+        setTimeout(() => this.setState({ isDeleting: true }), 500);
         
       } else if (isDeleting && text === '') {
         
@@ -50,10 +50,12 @@ class Typer extends React.Component {
   
     render() {    
       return (
-        <h2>{ this.props.heading }&nbsp;
-          <span>{ this.state.text }</span>
-          <span id="cursor"/>
-        </h2>
+        <div id="test">
+          <h2>{ this.props.heading }&nbsp;
+            <span>{ this.state.text }</span>
+            <span id="cursor"/>
+          </h2>
+        </div>
       );
       
     }

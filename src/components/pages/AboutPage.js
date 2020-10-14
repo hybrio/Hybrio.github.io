@@ -1,13 +1,21 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import me from '../../Images/me-grey.jpg';
 
 class AboutPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>About me.</h1>
+          <nav id="pageNav">
+            <ul id="pageNavList">
+                <li><h1>About me.</h1></li>
+                <li id="noPaddingOrMargin"><Link to="/"  id="noPaddingOrMargin"><h1 id="noPaddingOrMargin" className="grow">{'\u003C'}</h1></Link></li>
+            </ul>
+          </nav>
           <div id="about">
+          <img src={me} alt="image of me"/>
             <p id="about-text">
-              Hi i'm Alexander
+              Hi I'm Alexander
               <br/><br/><br/>
               I am a software developer from Auckland, New Zealand who enjoys writing code and solving problems.
               <br/><br/>
