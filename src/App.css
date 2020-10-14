@@ -14,7 +14,8 @@ h1{
 
 img{
   height: max(18vh,18vw);
-  float: right;
+  position: absolute;
+  left: 33%;
 }
 
 h2{
@@ -113,6 +114,7 @@ p{
   height: fit-content;
 }
 #about-text {
+  padding-top: calc(max(19vh,19vw));
   text-align: left;
 }
 
@@ -142,6 +144,10 @@ p{
     flex-direction: vertical;
     width: 100%;
     text-align: center;
+  }
+  #about-text {
+    padding-top: calc(max(18vh,18vw));
+    text-align: left;
   }
   a,h1{
     font-size: max(2vh,2vw);
