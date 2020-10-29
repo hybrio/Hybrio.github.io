@@ -9,11 +9,9 @@ class TagChecker extends React.Component {
         archived = <></>;
       }
     return (
-        <a href={this.props.target} target="_blank" rel="noopener noreferrer">
             <div className="Repository">
                 &nbsp;{this.props.name}  {archived}
             </div>
-        </a>
     );
   }
 }
