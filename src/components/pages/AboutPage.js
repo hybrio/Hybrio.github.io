@@ -8,8 +8,8 @@ class AboutPage extends React.Component {
       <div>
           <nav id="pageNav">
             <ul id="pageNavList">
-                <li><h1>About me.</h1></li>
-                <li id="noPaddingOrMargin"><Link to="/"  id="noPaddingOrMargin"><h1 id="noPaddingOrMargin" className="grow">{'\u003C'}</h1></Link></li>
+                <li><h1 className = "Heading">About me.</h1></li>
+                <li id="noPaddingOrMargin"><Link to="/"  id="noPaddingOrMargin"><h1 id="noPaddingOrMargin" className="grow Heading">{'\u003C'}</h1></Link></li>
             </ul>
           </nav>
           <div id="about">

@@ -56,19 +56,19 @@ class ProjectsPage extends React.Component {
   render() {
     return (
       <div>
-          <nav id="pageNav">
-            <ul id="pageNavList">
-                <li><h1>Projects.</h1></li>
+          <nav class="pageNav">
+            <ul class="pageNavList">
+                <li><h1 className = "Heading">Projects.</h1></li>
                 <li id="noPaddingOrMargin"><Link to="/"  id="noPaddingOrMargin"><h1 id="noPaddingOrMargin" className="grow">{'\u003C'}</h1></Link></li>
             </ul>
-          </nav>
-        <div id="projects">
-          <ul>
+            <ul class = "projectList">
             {this.state.projects.map(project => {
               return <a href={project.html_url} target="_blank" rel="noopener noreferrer" onMouseEnter={() => this.updatePreview(project.data)} ><Repository key={`project-${project.id}`} name={project.name} target={project.html_url} data={project.data} >{project.name}</Repository></a>
             })}
-            {(this.state.width >= 768) ? <div className="preview">{parse(this.state.previewData)}</div>: <></> }
           </ul>
+          </nav>
+        <div id="projects">
+          {(this.state.width >= 768) ? <div class="markdown-body">{parse(this.state.previewData)}</div>: <></> }
         </div>
       </div>
     )
