@@ -3,74 +3,6 @@
   width: 100%;
 }
 
-/* h1{
-  float: left;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, monospace;
-  font-size: max(4vh,4vw);
-  font-weight: normal;
-}
-
-img{
-  height: max(18vh,18vw);
-  position: absolute;
-  left: 33%;
-}
-
-h2{
-  margin-left: 1%;
-  margin-top: 0;
-  padding-top: 25%;
-  font-family: "Courier New", Courier, monospace;
-  font-style: oblique;
-  text-align: center;
-}
-
-nav{
-  height: max(18vh,18vw);
-  width: 100%;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-li {
-  float: left;
-  padding-left: 2%;
-  padding-top: 1%;
-}
-
-a {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, monospace;
-  font-size: max(4vh,4vw);
-}
-
-p{
-  margin-left: 1%;
-  margin-top: 0;
-  padding-top: 0%;
-  font-family: "Courier New", Courier, monospace;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-} */
-
 .portrait{
   height: max(18vh,18vw);
   position: absolute;
@@ -182,48 +114,48 @@ a:link {
   padding-left: 0;
 }
 
+.homePageNav{
+  padding-left: 0px;
+}
 
-@media only screen and (min-width: 768px) {
-  /* h1{
-    font-size: max(4vh,4vw);
+.homeNavList{
+  padding-left: 0px;
+  list-style-type: none;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.homePageNavItem{
+  padding-left: 10px;;
+}
+
+.link > .grow{
+  color: black; 
+  font-family: "Helvetica Neue", Helvetica, monospace;
+  font-weight: normal;
+  font-size: max(4vh,4vw);
+  margin-top: 0px;
+}
+
+
+@media only screen and (min-width: 768px) { /*style changes for desktop users*/
+
+ .homePageNav{
+    padding-left: 0px;
+ }
+
+  .homeNavList{
+
+    flex-direction: row;
   }
-  nav{
-    height: max(3vh,3vw);
+
+  .homePageNavItem{
+    padding-left: 50px;
   }
-  ul {
-    display: block;
-    flex-direction: none;
-  }
-  a,h1{
-    font-size: max(2vh,2vw);
-  } */
 
   .Heading{
     font-size: max(2vh,2vw);
-  }
-  
-  .pageNav{
-    width:  fit-content;
-    height: fit-content;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0;
-  }
-  
-  .pageNavList{
-    list-style-type: none;
-    margin: 0;
-    padding-bottom: 1%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .projectList{
-    list-style-type: none;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    width: 15%;
   }
 
   #noPaddingOrMargin{
@@ -231,21 +163,13 @@ a:link {
     height: fit-content;
     margin: 0px 0px 0px 0px;
   }
-
   
-.Repository{
-  display: block;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 100%;
-}
+  .Repository{
+    font-size: 100%;
+  }
 
   #Heading{
     font-size: max(2vh,2vw);
-  }
-  #projects{
-    display: flex;
   }
   #about-text {
     padding-top: calc(max(18vh,18vw));
@@ -254,8 +178,13 @@ a:link {
   #content{
     height: min(calc(100% - 3vh), calc(100% - 3vw));
   }
-  .grow { transition: all .2s ease-in-out; }
-  .grow:hover { transform: scale(1.15); }
+  .grow {
+    transition: all .2s ease-in-out;
+  }
+  .link > .grow{
+    font-size: max(2vh,2vw);
+  }
+  .grow:hover { transform: scale(1.05); }
 
   .markdown-body {
 		box-sizing: border-box;

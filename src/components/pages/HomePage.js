@@ -7,11 +7,11 @@ class Homepage extends React.Component {
   render() {
     return (
       <>
-        <nav className="pageNav">
-            <ul className="pageNavList">
-              <li> <a href={MyCV} without rel="noopener noreferrer" target="_blank" className="grow">Curriculum vitae. </a> </li>
-                <li><Link to="/projects"className="grow">Projects.</Link></li>
-                <li><Link to="/about"className="grow">About.</Link></li>
+        <nav className="homePageNav">
+            <ul className="homeNavList">
+              <li className="homePageNavItem"> <a href={MyCV} without rel="noopener noreferrer" target="_blank" className = "link"><h1 className="grow">Curriculum vitae.</h1></a> </li>
+                <li className="homePageNavItem"><Link to="/projects" className = "link"><h1 className="grow">Projects.</h1></Link></li>
+                <li className="homePageNavItem"><Link to="/about" className = "link"><h1 className="grow">About.</h1></Link></li>
             </ul>
           </nav>
         <div id="content">

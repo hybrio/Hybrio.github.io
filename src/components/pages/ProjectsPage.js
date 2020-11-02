@@ -7,7 +7,7 @@ class ProjectsPage extends React.Component {
 
   constructor() {
     super()
-    this.state = { projects: [], width:0, height:0, previewData:"" }
+    this.state = { projects: [], width:0, height:0, previewData:"<div style=\"  display: flex;  align-items: center;justify-content: center; height:50vw\">please hover a repository to view it's README.md file</div>" }
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
