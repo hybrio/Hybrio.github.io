@@ -6,14 +6,14 @@ class AboutPage extends React.Component {
   render() {
     return (
       <div>
-          <nav id="pageNav">
-            <ul id="pageNavList">
+          <nav class="pageNav">
+            <ul class="pageNavList">
                 <li><h1 className = "Heading">About me.</h1></li>
-                <li id="noPaddingOrMargin"><Link to="/"  id="noPaddingOrMargin"><h1 id="noPaddingOrMargin" className="grow Heading">{'\u003C'}</h1></Link></li>
+                <li id="noPaddingOrMargin"><Link to="/"  id="noPaddingOrMargin"><h1 id="noPaddingOrMargin" className="grow">{'\u003C'}</h1></Link></li>
             </ul>
           </nav>
           <div id="about">
-          <img src={me} alt="image of me"/>
+          <img class = "portrait" src={me} alt="image of me"/>
             <p id="about-text">
               Hi I'm Alexander
               <br/><br/><br/>

@@ -1,4 +1,4 @@
-.App, body, #root, html {
+.App, html {
   height: 100%;
   width: 100%;
 }
@@ -70,13 +70,29 @@ p{
   text-align: center;
   width: 100%;
 } */
+
+.portrait{
+  height: max(18vh,18vw);
+  position: absolute;
+  left: 33%;
+}
+
+.typer{
+  margin-left: 1%;
+  margin-top: 0;
+  padding-top: 25%;
+  font-family: "Courier New", Courier, monospace;
+  font-style: oblique;
+  text-align: center;
+}
+
 a:link {
   text-decoration: none;
 }
 
 .Heading{
   margin: 0px 0px 0px 0px;
-  font-size: max(8vh,8vw);
+  font-size: max(4vh,4vw);
   font-family: "Helvetica Neue", Helvetica, monospace;
   font-weight: normal;
 }
@@ -110,11 +126,11 @@ a:link {
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;
   line-height: 1.6;
-  font-size: max(4vh,4vw);
+  font-size: max(2vh,2vw);
 }
 
 #noPaddingOrMargin{
-  font-size: max(8vh,8vw);
+  font-size: max(4vh,4vw);
   color: rgb(0, 0, 0);
   height: fit-content;
   margin: 0px 0px 0px 0px;
@@ -131,6 +147,13 @@ a:link {
   animation: blink .7s steps(1) infinite;
 }
 
+#about {
+  width: 75%;
+  padding-left: 10%;
+  margin-top: 20%;
+  height: fit-content;
+}
+
 @keyframes blink {
   50% {
     border-color: transparent;
@@ -140,9 +163,16 @@ a:link {
 #about {
   width: 75%;
   padding-left: 10%;
+  margin-top: 5%;
   height: fit-content;
 }
 #about-text {
+  margin-left: 1%;
+  margin-top: 1%;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   padding-top: calc(max(19vh,19vw));
   text-align: left;
 }

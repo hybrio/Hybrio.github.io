@@ -7,8 +7,8 @@ class Homepage extends React.Component {
   render() {
     return (
       <>
-        <nav>
-            <ul>
+        <nav className="pageNav">
+            <ul className="pageNavList">
               <li> <a href={MyCV} without rel="noopener noreferrer" target="_blank" className="grow">Curriculum vitae. </a> </li>
                 <li><Link to="/projects"className="grow">Projects.</Link></li>
                 <li><Link to="/about"className="grow">About.</Link></li>
