@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
+import './markdown.css';
 import HomePage from './components/pages/HomePage';
 import ProjectsPage from './components/pages/ProjectsPage';
 import AboutPage from './components/pages/AboutPage';
