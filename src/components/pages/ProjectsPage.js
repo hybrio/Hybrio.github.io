@@ -32,7 +32,6 @@ class ProjectsPage extends React.Component {
             this.setState({
               projects: updatedState
           })});
-          console.log(this.state.projects);
         });
       });
 
@@ -68,7 +67,7 @@ class ProjectsPage extends React.Component {
           </ul>
           </nav>
         <div id="projects">
-          {(this.state.width >= 768) ? <div class="markdown-body">{parse(this.state.previewData)}</div>: <></> }
+          { (this.state.width >= 768) ? <div class="markdown-body">{parse(this.state.previewData)}</div>: <></> }
         </div>
       </div>
     )
